@@ -23,5 +23,12 @@ status = "Enabled"
 }
 }
 
+terraform {
+backend "s3" {
+region = "us-east-1"
+bucket = "raju.k8s.flm"
+key = "prod/terraform.tfstate"
+}
+}
 
 
