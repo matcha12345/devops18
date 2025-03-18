@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "one" {
-  bucket = "raju.k8s.flm"
+  bucket = "lokesh.k8s.flm"
 }
 
 resource "aws_s3_bucket_ownership_controls" "two" {
@@ -26,7 +26,7 @@ status = "Enabled"
 terraform {
 backend "s3" {
 region = "us-east-1"
-bucket = "raju.k8s.flm"
+bucket = "lokesh.k8s.flm"
 key = "prod/terraform.tfstate"
 }
 }
